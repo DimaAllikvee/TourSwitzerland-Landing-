@@ -299,6 +299,7 @@ a:hover {
     line-height: 24.2px;
     font-weight: 700;
     align-items: center;
+
 }
 
 .banner-info::before {
@@ -503,7 +504,13 @@ a:hover {
         font-size: 20px;
     }
     .banner-title {
-        font-size: 65px; /* уменьшаем заголовок */
+        font-size: 65px;
+        color: #000000;
+
+    }
+
+    .banner-info {
+        color: var(--color-dark);
     }
 }
 
@@ -801,9 +808,12 @@ a:hover {
 }
 
 .tour-itinerary-map {
-    width: 100%;        /* Карта на всю ширину родителя */
-    height: auto;       /* Автоматическая высота для сохранения пропорций */
-    display: block;     /* Убираем пробелы под img */
+    margin-top: 65px;
+    width: 920px;
+    height: 590px;
+    flex-shrink: 0;
+
+    display: block;
 }
 
 /* Правая колонка */
@@ -920,6 +930,10 @@ a:hover {
     .feature-icon {
         width: 40px;
         height: 40px;
+    }
+
+    .tour-itinerary-map{
+        height: auto;
     }
 }
 
@@ -1256,7 +1270,7 @@ a:hover {
 }
 
 .places-button:hover {
-    background-color: #0056b3;
+    background-color: #686b70;
 }
 
 /* ---------- Адаптивность (до 768px) ---------- */
@@ -1578,6 +1592,7 @@ a:hover {
     .footer-menu-list {
         justify-content: center;        /* Центрируем меню */
         gap: 20px;
+        text-wrap: nowrap;
     }
 
     .footer-social {
